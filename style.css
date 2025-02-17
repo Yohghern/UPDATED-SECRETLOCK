@@ -6,11 +6,11 @@
 
 .banner {
   width: 100%;
-  min-height: 100vh; /* Ensure the banner covers at least the viewport height */
+  min-height: 100vh; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: repeat-y; /* Repeat the background vertically */
+  background-repeat: repeat-y; 
 }
 
 .navbar {
@@ -79,7 +79,7 @@
   margin-bottom: 30px;
 }
 
-/* Style for the custom file upload button */
+
 .custom-file-upload {
   width: 200px;
   padding: 15px 0;
@@ -116,12 +116,12 @@
   border: none;
 }
 
-/* Hide the default file input */
+
 input[type="file"] {
   display: none;
 }
 
-/* Style for the Encrypt and Decrypt buttons */
+
 button {
   width: 200px;
   padding: 15px 0;
@@ -157,7 +157,7 @@ button:hover {
   border: none;
 }
 
-/* Help page specific styles */
+
 .help-content {
   max-width: 800px;
   margin: 50px auto;
