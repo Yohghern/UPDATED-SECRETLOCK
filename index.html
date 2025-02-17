@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypting and Decrypting Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="logo.png" class="logo" alt="Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="encrypt.html">Encryption</a></li>
+        <li><a href="decrypt.html">Decryption</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>Encrypting and Decrypting Website</h1>
+      <p>Providing the best security for your files and images.</p>
+      
+      <!-- Styled File Upload Input -->
+      <label for="fileInput" class="custom-file-upload">
+        <span></span>Choose File
+      </label>
+      <input type="file" id="fileInput" accept=".txt, .jpg, .png, .pdf">
+      
+      <!-- Display the selected file name -->
+      <p id="fileNameDisplay" style="color: #fff; margin-top: 10px;">No file chosen</p>
+      
+      <!-- Buttons for Encryption and Decryption -->
+      <div>
+        <button type="button" onclick="encryptFile()"><span></span>Encrypt</button>
+        <button type="button" onclick="decryptFile()"><span></span>Decrypt</button>
+      </div>
+
+      <!-- Display area for encrypted/decrypted content -->
+      <div id="output" style="margin-top: 20px; color: #fff;"></div>
+    </div>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  min-height: 100vh; /* Ensure the banner covers at least the viewport height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y; /* Repeat the background vertically */
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Style for the custom file upload button */
+.custom-file-upload {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.custom-file-upload span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.custom-file-upload:hover span {
+  width: 100%;
+}
+
+.custom-file-upload:hover {
+  border: none;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style for the Encrypt and Decrypt buttons */
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+button span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+/* Help page specific styles */
+.help-content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.help-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #009688;
+}
+
+.help-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.help-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #009688;
+}
+
+.help-content ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.help-content ol li {
+  margin-bottom: 10px;
+}
